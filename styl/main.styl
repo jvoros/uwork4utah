@@ -1,0 +1,126 @@
+/*
+
+  A Stylus Implementation of the Skeleton Framework
+
+  Skeleton Framework | 1.0.8 | MIT | Feb 22nd, 2016
+  skeleton-framework.github.io
+
+  Stylus | MIT
+  stylus-lang.com
+
+  Normalize CSS | v5.0.0 | MIT License |
+  github.com/necolas/normalize.css
+
+*/
+
+@import "normalize.styl"
+@import "colors"
+@import "grid"
+@import "base"
+@import "typography"
+@import "links"
+@import "buttons"
+@import "forms"
+@import "lists"
+@import "code"
+@import "tables"
+@import "spacing"
+@import "floats-positioning"
+@import "utilities"
+@import "misc"
+// @import "mediaqueries" use to copy media queries where needed.
+
+lightblue = rgb(247, 250, 255)
+blue = rgb(48, 129, 180)
+navy = rgb(29, 41, 53)
+red = #CC3333
+
+body
+  background-color: navy
+  min-height: 100%
+  text-align: center
+
+.whitebar
+  background-color: white
+  padding: 2rem
+
+.navybar
+  padding: 2rem
+
+.lightbar
+  background-color: lightblue
+  padding: 2rem
+  color: navy
+
+.redbar
+  padding: 2rem
+  background-color: red
+  color: white
+
+#hero
+  background-color: lightblue
+  padding: 1rem
+  text-align: center
+
+  img
+    width: 80%
+
+  p
+    font-weight: 700
+    font-size: 1.6rem
+    line-height: 2rem
+    padding: 1rem
+    margin-bottom: 1rem
+    text-align: center
+
+.mission-statement
+  text-align: center
+  font-family: font-stack-serif
+  font-style: italic
+  font-size: 2rem
+  line-height: 3rem
+  color: navy
+  padding: 2rem
+
+.firstaction
+  img
+    width: 100%
+  p
+    text-align: left
+
+.sociallinks
+  li
+    display: inline
+    padding: 0 2rem
+
+input[type="submit"].button-primary
+  background-color: blue
+  border: 0
+
+  &:hover
+    background-color: lighten(blue, 8)
+
+#signup
+  background-color: navy
+  padding: 4rem
+  color: white
+
+#mce-EMAIL
+  width: 80%
+
+
+@media (min-width: 720px)
+
+  #hero
+    padding: 5rem 0
+
+    .column
+      padding: 1rem
+
+    p
+      margin-top: 1rem
+      font-size: 3rem
+      line-height: 4rem
+
+  #mce-EMAIL
+    width: 50%
