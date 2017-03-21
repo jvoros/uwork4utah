@@ -1042,6 +1042,7 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 body {
+  border-top: 30px solid #1d2935;
   background-color: #1d2935;
   min-height: 100%;
   text-align: center;
