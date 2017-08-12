@@ -1199,6 +1199,7 @@ footer h2 {
 }
 .tax-section {
   padding: 30px;
+  background-color: #000;
 }
 .tax-section .title-bg {
   background: rgba(255,255,255,0.15);
@@ -1222,10 +1223,10 @@ footer h2 {
   background: url("../images/curtis-scare/header-bg.jpg") no-repeat top left;
 }
 .ts3 {
-  background: url("../images/curtis-scare/blue-bg.jpg") no-repeat top left;
+  background: url("../images/curtis-scare/blue-bg.jpg") repeat top left;
 }
 .ts4 {
-  background: url("../images/curtis-scare/lobbyists.jpg") no-repeat top left;
+  background: url("../images/curtis-scare/lobbyists.jpg") repeat top left;
 }
 .ts5 {
   background: url("../images/curtis-scare/sharknado.jpg") no-repeat top left;
