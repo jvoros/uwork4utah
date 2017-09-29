@@ -649,8 +649,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 400;
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #fff;
@@ -717,6 +717,7 @@ h6 {
 }
 p {
   margin-top: 0;
+  text-align: left;
 }
 a {
   color: #1eaedb;
@@ -1063,6 +1064,18 @@ body {
   padding: 2rem;
   background-color: #c33;
   color: #fff;
+}
+.redbar p a {
+  color: #1d2935;
+}
+.redbar a.button {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0;
+  background-color: #fff;
+  color: #1d2935;
+}
+.redbar a.button:hover {
+  background-color: #f7faff;
 }
 #hero {
   background-color: #f7faff;
