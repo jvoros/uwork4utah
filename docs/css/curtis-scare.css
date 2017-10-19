@@ -1063,6 +1063,16 @@ body {
 .redbar a.button:hover {
   background-color: #f7faff;
 }
+.image-fill {
+  width: 90%;
+  margin: 0 auto;
+}
+#chaff-vid {
+  width: 320px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
 #hero {
   background-color: #f7faff;
   padding: 1rem;
@@ -1127,6 +1137,10 @@ input[type="submit"].button-primary:hover {
   }
   #mce-EMAIL {
     width: 50%;
+  }
+  #chaff-vid {
+    width: 560px;
+    height: 315px;
   }
 }
 body {
