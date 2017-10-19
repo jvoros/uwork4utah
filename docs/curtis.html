@@ -36,7 +36,32 @@
 
 </head>
 <body>
-
+  
+    <nav>
+      <i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commentary.html">Commentary</a></li>
+      </ul>
+    </nav>
+    
+    <script>
+      (function (window, document) {
+    
+        var hamburger = document.getElementById('hamburger');
+    
+        function toggleNav() {
+          var element = document.getElementById('navList');
+          element.classList.toggle('show');
+        }
+    
+        hamburger.onclick = function(e) {
+          e.preventDefault();
+          toggleNav();
+        }
+    
+      }(this, this.document));
+    </script>  
 
     <header>
       <div class="row">

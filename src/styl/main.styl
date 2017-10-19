@@ -26,6 +26,7 @@
 @import "imports/tables"
 @import "imports/spacing"
 @import "imports/floats-positioning"
+@import "imports/nav"
 @import "imports/utilities"
 @import "imports/misc"
 // @import "mediaqueries" use to copy media queries where needed.
@@ -36,7 +37,6 @@ navy = rgb(29, 41, 53)
 red = #CC3333
 
 body
-  border-top: 30px solid navy
   background-color: navy
   min-height: 100%
   text-align: center
@@ -70,7 +70,35 @@ body
 
   a.button:hover
     background-color: lightblue
-  
+
+.image-fill
+  width: 90%
+  margin: 0 auto
+
+nav
+  background-color: navy
+  padding: 2rem 1rem
+  font-family: font-stack-sans
+  text-align: right
+
+  ul
+    margin-top: 1rem
+    margin-bottom: 0
+    display: none
+    text-align: center
+
+  ul.show
+    display: block
+
+  a
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+    
+    &:hover
+      color: lightblue
+
+
 #hero
   background-color: lightblue
   padding: 1rem
@@ -124,6 +152,21 @@ input[type="submit"].button-primary
 
 
 @media (min-width: 720px)
+
+  #hamburger
+    display: none
+  
+  nav
+    overflow: hidden
+
+    ul
+      display: block
+      float: right
+      overflow: hidden
+            
+    li
+      float: left
+      margin-right: 1rem
 
   #hero
     padding: 5rem 0

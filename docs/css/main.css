@@ -1043,7 +1043,6 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 body {
-  border-top: 30px solid #1d2935;
   background-color: #1d2935;
   min-height: 100%;
   text-align: center;
@@ -1076,6 +1075,33 @@ body {
 }
 .redbar a.button:hover {
   background-color: #f7faff;
+}
+.image-fill {
+  width: 90%;
+  margin: 0 auto;
+}
+nav {
+  background-color: #1d2935;
+  padding: 2rem 1rem;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: right;
+}
+nav ul {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  display: none;
+  text-align: center;
+}
+nav ul.show {
+  display: block;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: #f7faff;
 }
 #hero {
   background-color: #f7faff;
@@ -1128,6 +1154,21 @@ input[type="submit"].button-primary:hover {
   width: 80%;
 }
 @media (min-width: 720px) {
+  #hamburger {
+    display: none;
+  }
+  nav {
+    overflow: hidden;
+  }
+  nav ul {
+    display: block;
+    float: right;
+    overflow: hidden;
+  }
+  nav li {
+    float: left;
+    margin-right: 1rem;
+  }
   #hero {
     padding: 5rem 0;
   }
