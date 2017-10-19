@@ -1089,6 +1089,12 @@ nav a {
 nav a:hover {
   color: #f7faff;
 }
+#chaff-vid {
+  width: 320px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
 #hero {
   background-color: #f7faff;
   padding: 1rem;
@@ -1168,6 +1174,10 @@ input[type="submit"].button-primary:hover {
   }
   #mce-EMAIL {
     width: 50%;
+  }
+  #chaff-vid {
+    width: 560px;
+    height: 315px;
   }
 }
 body {
