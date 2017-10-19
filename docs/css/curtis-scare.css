@@ -635,8 +635,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 400;
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #fff;
@@ -703,6 +703,7 @@ h6 {
 }
 p {
   margin-top: 0;
+  text-align: left;
 }
 a {
   color: #1eaedb;
@@ -1050,6 +1051,18 @@ body {
   background-color: #c33;
   color: #fff;
 }
+.redbar p a {
+  color: #1d2935;
+}
+.redbar a.button {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0;
+  background-color: #fff;
+  color: #1d2935;
+}
+.redbar a.button:hover {
+  background-color: #f7faff;
+}
 #hero {
   background-color: #f7faff;
   padding: 1rem;
@@ -1118,7 +1131,7 @@ input[type="submit"].button-primary:hover {
 }
 body {
   border-top: 0;
-  background-color: #fff200;
+  background-color: #fff205;
   font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-size: 2rem;
@@ -1127,7 +1140,7 @@ body {
   font-smoothing: antialiased;
 }
 h1 {
-  color: #fff200;
+  color: #fff205;
   text-transform: uppercase;
   font-size: 7rem;
   font-family: 'Knewave', cursive;
@@ -1140,7 +1153,7 @@ h3 {
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin: 0;
-  color: #fff200;
+  color: #fff205;
 }
 h1 span,
 h2 span,
@@ -1174,7 +1187,7 @@ footer {
 }
 header h2,
 footer h2 {
-  color: #fff200;
+  color: #fff205;
   text-transform: uppercase;
   font-size: 4.5rem;
   margin-top: 10px;
@@ -1192,10 +1205,10 @@ footer h2 {
   color: #fff;
 }
 .ute h3 span {
-  color: #fff200;
+  color: #fff205;
 }
 .ute strong {
-  color: #fff200;
+  color: #fff205;
 }
 .tax-section {
   padding: 30px;
@@ -1244,7 +1257,7 @@ footer h3 {
   text-transform: uppercase;
 }
 footer h3 span {
-  color: #fff200;
+  color: #fff205;
 }
 .disclaimer {
   padding: 50px;
