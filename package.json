@@ -10,10 +10,14 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^0.15.0-beta.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "deploy": "gulp build && git commit -a"
   },
   "repository": {
     "type": "git",
