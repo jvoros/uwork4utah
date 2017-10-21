@@ -1,0 +1,24 @@
+// Buttons
+
+a.button
+  display: block
+  margin: 0 1rem 1rem
+  padding: 1rem 2rem
+  min-width: 10rem
+  border-radius: 5px
+  background-color: $lightblue
+  color: $navy
+  font-family: $font-stack-sans
+  font-weight: 700
+  text-transform: uppercase
+  text-decoration: none
+  cursor: pointer
+
+  &:hover
+    color: inherit
+    background-color: darken($lightblue, 5%)
+    text-decoration: none
+
+@media (min-width: 400px)
+  a.button
+    display: inline-block

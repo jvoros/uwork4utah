@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>
+    {{#if title}}
+        {{title}}
+      {{else}}
+        U Work 4 Utah
+    {{/if}}
+  </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Force IE Edge -->
+  <meta http-equiv="x-ua-compatible" content="IE=edge" >
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i" rel="stylesheet">
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/sass.css">
+  
+  {{#>head-block}}
+      {{!-- Custom <head> content per page could be added. --}}
+  {{/head-block}}
+
+</head>
+<body>
+  
+  {{#>nav-block}}
+    {{!-- >_nav_new --}}
+  {{/nav-block}}
+  
+  {{#>content-block}}
+    {{!-- Contnet goes here. --}}
+  {{/content-block}}
+    
+  <footer>
+    {{#>footer-block}}
+      {{!--
+        The `_footer` partial is the default content,
+        but can be overridden.
+      --}}
+      {{!-- >_footer --}}
+    {{/footer-block}}
+  </footer>
+
+  {{#>scripts-block}}
+    {{!-- Custom scripts per page can be added. --}}
+  {{/scripts-block}}
+
+</body>
+</html>

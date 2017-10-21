@@ -1,11 +1,31 @@
 const gulp = require('gulp');
 
+const browserSync = require('browser-sync');
 const del = require('del');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass');
 const stylus = require('gulp-stylus');
+const sourcemaps = require('gulp-sourcemaps');
 
+// SERVERS
+const server = browserSync.create();
+
+function reload(done) {
+  server.reload();
+  done();
+}
+
+function serve(done) {
+  server.init({
+    server: {
+      baseDir: './docs/'
+    }
+  });
+  done();
+}
+
+// FINDERS
 const config = {
   src: "./src",
   pages: "./src/pages/*.hbs",
@@ -35,7 +55,9 @@ gulp.task('stylus', () => {
 
 gulp.task('sass', () => {
   return gulp.src(config.sass)
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.css));
 });
 
@@ -63,11 +85,11 @@ gulp.task('cname', () => {
 
 // WATCHERS
 gulp.task('watchers', () => {
-  gulp.watch(config.pages, gulp.series('cleanhtml', 'html'));
-  gulp.watch(config.partials, gulp.series('cleanhtml', 'html'));
-  gulp.watch(config.styl, gulp.series('stylus'));
-  gulp.watch(config.sass, gulp.series('sass'));
-  gulp.watch(config.assets, gulp.series('cleanassets', 'assets'));
+  gulp.watch(config.pages, gulp.series('cleanhtml', 'html', reload));
+  gulp.watch(config.partials, gulp.series('cleanhtml', 'html', reload));
+  gulp.watch(config.styl, gulp.series('stylus', reload));
+  gulp.watch(config.sass, gulp.series('sass', reload));
+  gulp.watch(config.assets, gulp.series('cleanassets', 'assets', reload));
 });
 
 // RUNNERS
@@ -81,4 +103,4 @@ const buildList = [
 ];
 
 gulp.task('build', gulp.series(...buildList));
-gulp.task('watch', gulp.series(...buildList, 'watchers'));
+gulp.task('dev', gulp.series(...buildList, serve, 'watchers'));

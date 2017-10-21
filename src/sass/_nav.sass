@@ -1,0 +1,59 @@
+// Navigation
+
+nav
+  color: white
+  padding: 1rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+  ul
+    display: none
+    width: 100%
+    padding-top: 1rem
+    text-align: center
+    text-transform: uppercase
+
+  li
+    margin-bottom: 1rem
+
+  li a
+    color: white
+    padding: 0.5rem
+
+  a:hover
+    color: $lightblue
+    text-decoration: none
+    background-color: $red
+
+#navbrand
+  font-family: "Droid Serif", $font-stack-serif
+  font-size: 1.25rem
+
+  i
+    color: $red
+    margin-left: 1rem
+    font-size: 0.8rem
+
+  a
+    text-decoration: none
+    color: inherit
+
+  a:hover
+    color: inherit
+    background-color: inherit
+
+@media (min-width: 400px)
+  
+  #hamburger
+    display: none
+  
+  nav ul
+    width: auto
+    display: block
+    padding-top: 0
+  
+  nav ul li
+    display: inline
+    margin-left: 1rem

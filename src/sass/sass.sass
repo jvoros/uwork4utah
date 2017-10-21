@@ -1,4 +1,67 @@
-@import "imports/reboot"
+@import "reboot"
+@import "_colors"
+@import "_typography"
+@import "_buttons"
+@import "_nav"
+@import "_hero"
+@import "_social"
+
+
+// Sanitize reboot
+*
+  background-repeat: no-repeat
 
 body
-  background-color: white
+	margin: 0
+
+img
+  max-width: 100%
+
+nav ol, nav ul
+  list-style: none
+  margin-bottom: 0
+  padding: 0
+
+// Utilities
+.container
+  max-width: 1100px
+  margin: 0 auto
+
+.show
+  display: block
+
+// Homepage
+#nav-section
+  padding: 0
+
+section.home-section
+  padding: 0
+  text-align: center
+
+  h1, h2, h3, h4
+    font-family: $font-stack-sans
+    margin-bottom: 1rem
+
+  h2
+    border-bottom: 2px solid white
+    padding-bottom: 1rem
+
+  h3
+    color: $navy
+
+  p
+    text-align: left
+
+img.home-image
+  width: 100%
+  margin-bottom: 0rem
+
+.section-content
+  padding: 2rem
+
+.current-activity-flex
+  display: flex
+  flex-wrap: wrap
+
+.current-activity-card
+  flex: 1

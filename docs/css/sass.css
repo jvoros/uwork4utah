@@ -1,3 +1,10 @@
+/*!
+ * Bootstrap Reboot v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 *,
 *::before,
 *::after {
@@ -46,6 +53,7 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0; }
@@ -105,18 +113,21 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
-  a:hover {
-    color: #0056b3;
-    text-decoration: underline; }
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none; }
-  a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-    color: inherit;
-    text-decoration: none; }
-  a:not([href]):not([tabindex]):focus {
-    outline: 0; }
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none; }
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0; }
 
 pre,
 code,
@@ -150,6 +161,7 @@ label,
 select,
 summary,
 textarea {
+  -ms-touch-action: manipulation;
   touch-action: manipulation; }
 
 table {
@@ -270,5 +282,211 @@ template {
 [hidden] {
   display: none !important; }
 
+/*# sourceMappingURL=bootstrap-reboot.css.map */
+.navy {
+  background-color: #1d2935; }
+
+.red {
+  background-color: #cc3333;
+  color: white; }
+
+.lightblue {
+  background-color: #e5efff; }
+
+html {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1rem; }
+
+h1.home-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #cc3333;
+  margin-bottom: 2rem; }
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.6rem; }
+  h3 {
+    font-size: 1rem; } }
+
+a.button {
+  display: block;
+  margin: 0 1rem 1rem;
+  padding: 1rem 2rem;
+  min-width: 10rem;
+  border-radius: 5px;
+  background-color: #e5efff;
+  color: #1d2935;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer; }
+  a.button:hover {
+    color: inherit;
+    background-color: #ccdfff;
+    text-decoration: none; }
+
+@media (min-width: 400px) {
+  a.button {
+    display: inline-block; } }
+
+nav {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  nav ul {
+    display: none;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase; }
+  nav li {
+    margin-bottom: 1rem; }
+  nav li a {
+    color: white;
+    padding: 0.5rem; }
+  nav a:hover {
+    color: #e5efff;
+    text-decoration: none;
+    background-color: #cc3333; }
+
+#navbrand {
+  font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25rem; }
+  #navbrand i {
+    color: #cc3333;
+    margin-left: 1rem;
+    font-size: 0.8rem; }
+  #navbrand a {
+    text-decoration: none;
+    color: inherit; }
+  #navbrand a:hover {
+    color: inherit;
+    background-color: inherit; }
+
+@media (min-width: 400px) {
+  #hamburger {
+    display: none; }
+  nav ul {
+    width: auto;
+    display: block;
+    padding-top: 0; }
+  nav ul li {
+    display: inline;
+    margin-left: 1rem; } }
+
+#hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 0; }
+  #hero img {
+    margin: 2rem 0; }
+  #hero div {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid #e5efff;
+    border-top: 2px solid #e5efff;
+    color: #1d2935;
+    margin: 0 1rem 2rem;
+    padding: 1rem; }
+    #hero div span {
+      color: #cc3333;
+      font-weight: 700; }
+
+@media (min-width: 400px) {
+  #hero img {
+    width: 80%; }
+  #hero div {
+    width: 70%;
+    margin: 0 auto 2rem;
+    font-size: 1.5rem; } }
+
+#social {
+  text-align: center;
+  padding: 0; }
+
+ul.sociallinks {
+  list-style: none;
+  padding: 0 1rem;
+  font-size: 1.75rem; }
+  ul.sociallinks li {
+    display: inline;
+    padding: 1rem; }
+  ul.sociallinks a {
+    color: #1d2935; }
+  ul.sociallinks a:hover {
+    color: #cc3333; }
+
+@media (min-width: 400px) {
+  ul.sociallinks {
+    font-size: 2.75rem; } }
+
+* {
+  background-repeat: no-repeat; }
+
 body {
-  background-color: white; }
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+nav ol, nav ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.show {
+  display: block; }
+
+#nav-section {
+  padding: 0; }
+
+section.home-section {
+  padding: 0;
+  text-align: center; }
+  section.home-section h1, section.home-section h2, section.home-section h3, section.home-section h4 {
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 1rem; }
+  section.home-section h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem; }
+  section.home-section h3 {
+    color: #1d2935; }
+  section.home-section p {
+    text-align: left; }
+
+img.home-image {
+  width: 100%;
+  margin-bottom: 0rem; }
+
+.section-content {
+  padding: 2rem; }
+
+.current-activity-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.current-activity-card {
+  flex: 1; }
+
+/*# sourceMappingURL=sass.css.map */
