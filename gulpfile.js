@@ -5,7 +5,6 @@ const del = require('del');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const stylus = require('gulp-stylus');
 const sourcemaps = require('gulp-sourcemaps');
 
 // SERVERS
@@ -30,7 +29,6 @@ const config = {
   src: "./src",
   pages: "./src/pages/*.hbs",
   partials: "./src/partials",
-  styl: "./src/styl/*.styl",
   sass: "./src/sass/*.sass",
   assets: "./src/assets/**/*",
   cname: "./src/CNAME",
@@ -47,12 +45,6 @@ gulp.task('cleancss', () => del(config.css));
 gulp.task('cleanassets', () => del(config.destassets));
 
 // BUILDERS
-gulp.task('stylus', () => {
-  return gulp.src(config.styl)
-    .pipe(stylus())
-    .pipe(gulp.dest(config.css));
-});
-
 gulp.task('sass', () => {
   return gulp.src(config.sass)
     .pipe(sourcemaps.init())
@@ -87,8 +79,7 @@ gulp.task('cname', () => {
 gulp.task('watchers', () => {
   gulp.watch(config.pages, gulp.series('cleanhtml', 'html', reload));
   gulp.watch(config.partials, gulp.series('cleanhtml', 'html', reload));
-  gulp.watch(config.styl, gulp.series('stylus', reload));
-  gulp.watch(config.sass, gulp.series('sass', reload));
+  gulp.watch(config.sass, gulp.series('cleancss', 'sass', reload));
   gulp.watch(config.assets, gulp.series('cleanassets', 'assets', reload));
 });
 
@@ -97,7 +88,6 @@ const buildList = [
   'cleanall',
   'cname',
   'html',
-  'stylus',
   'sass',
   'assets'
 ];

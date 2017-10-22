@@ -10,12 +10,9 @@
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-stylus": "^2.6.0",
-    "husky": "^0.15.0-beta.10"
+    "gulp-sourcemaps": "^2.6.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",

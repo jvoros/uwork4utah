@@ -22,14 +22,15 @@
 
   <!-- FONT -->
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i" rel="stylesheet">
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   
   {{#>head-block}}
       {{!-- Custom <head> content per page could be added. --}}
@@ -39,7 +40,7 @@
 <body>
   
   {{#>nav-block}}
-    {{>_nav }}
+    {{!-- >_nav_new --}}
   {{/nav-block}}
   
   {{#>content-block}}
@@ -52,7 +53,7 @@
         The `_footer` partial is the default content,
         but can be overridden.
       --}}
-      {{>_footer }}
+      {{!-- >_footer --}}
     {{/footer-block}}
   </footer>
 

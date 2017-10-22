@@ -1,71 +1,60 @@
 {{#>base }}
 
   {{#*inline "content-block"}}
-    
-    <!-- header hero -->
-    <div id="hero" >
-      <div class="container">
-        <div class="row">
-            <img src="assets/images/header.svg" alt="U Work 4 Utah" />
+  <section id="nav-section" class="navy">
+    <nav class="container">
+      <div id="navbrand"><a href="index.html">U WORK 4 UTAH <i>A Super PAC</i></a></div>
+      <i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <ul id="navList" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="hero" class="home-section container">
+    <img src="assets/images/header.svg" alt="U Work 4 Utah" />
+    <div id="mission"><span>U Work 4 Utah</span> uses <b>creative methods</b> to influence partisan elected officials representing Utahns to act in accordance with the <b>moderate views of their constituents.</b></div>
+    <a class="button" href="https://www.crowdpac.com/campaigns/226261/hold-mia-love-accountable-on-health-care">Donate to the cause</a>
+    {{> _sociallinks }}
+  </section>
+
+  <h1 class="home-header">Current Activity</h1>
+  <section class="home-section red">
+    <div class="container ca-flex">
+        <img class="ca-image" src="assets/images/MiaLoveBillboard-Mockup.png" />
+        <div class="ca-headers"><h2>Hold Mia Love Accountable on Healthcare</h2>
+          <h3>Help us launch a billboard in a prominent location in her district.</h3>
+          <a class="button" href="https://www.crowdpac.com/campaigns/226261/hold-mia-love-accountable-on-health-care">Donate now</a>
         </div>
-      </div>
+        <p class="ca-content">For <b>7 years</b> Mia Love has been promising to fix the problems with our current health care system. Since being elected, with a majority Republican Congress, Senate, and a Republican President she has failed to deliver ANY change. Health insurance premiums continue to rise, and in fact, <a href="http://www.commonwealthfund.org/publications/blog/2017/jun/aca-market-stability">because of the uncertainty she and her colleagues have introduced into the health insurance market</a>, premiums are <i>rising even more!</i></p>
     </div>
+  </section>
 
-    <!-- mission stmt row -->
-    <div class="whitebar">
-      <div class="container">
-        <div class="mission-statement">
-            U Work 4 Utah uses creative methods to influence partisan elected officials representing Utahns to act in accordance with the moderate views of their constituents.
-          </div>
-        </div>
-    </div>
+  <h1 class="home-header">Past Activity</h1>
+  
 
-    <!-- first action row -->
-    <div class="redbar">
-        <div class="container">
-          <div class="row">
-            <div class="twelve columns">
-              <h4>Help Hold Mia Love Accountable</h4>
-              <p>For <strong>7 years</strong> Mia Love has been promising to fix the problems with our current health care system. Since being elected, with a majority Republican Congress, Senate, and a Republican President she has failed to deliver <strong>ANY</strong> change. Health insurance premiums continue to rise, and in fact, <a href="http://www.commonwealthfund.org/publications/blog/2017/jun/aca-market-stability" target="_blank">because of the uncertainty she and her colleagues have introduced into the health insurance market</a>, premiums are rising <i>even more!</i></p>
-              <h5>Help us launch a billboard in prominent location in her district holding her accountable!</h5>
-              <a class="button" href="https://www.crowdpac.com/campaigns/226261/reminding-our-elected-officials-who-they-actually-work-for">DONATE TO THIS ACTION</a><br /><br />
-              <img class="image-fill" src="assets/images/MiaLoveBillboard-Mockup.png" alt="mia love healthcare billboard" />  
-            </div>
-          </div>
-        </div>
-      </div>
 
-    <div class="navy">
-      <div class="container">
-        <br />
-        <a href="http://www.sltrib.com/opinion/commentary/2017/09/29/commentary-the-utah-delegations-race-against-truth/" target="_blank"><img class="image-fill" src="assets/images/sltrib.png" alt="Salt Lake Tribune" /></a>
-        <br /><br />
-      Read <a href="http://www.sltrib.com/opinion/commentary/2017/09/29/commentary-the-utah-delegations-race-against-truth/" target="_blank">our latest Op-Ed</a> on the Utah Delegation's failure on healthcare in the Salt Lake Tribune.
-      <br /><br />
-      </div>
-    </div>
+  {{/inline}}
 
-    <div class="lightbar">
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <h4>Help Choose Chaffetz's Replacement</h4>
-            We pushed to help elect a moderate to replace extremist Chaffetz.
-            <br /><br />
-            <iframe id="chaff-vid" width="560" height="315" src="https://www.youtube.com/embed/ZuDN2tTqCNU" frameborder="0" allowfullscreen></iframe>  
-          </div>
-        </div>
-      </div>
-    </div>
+  {{#*inline "scripts-block"}}
+    <script>
+      (function (window, document) {
 
-    <div class="navybar">
-      <div class="container"><div class="row"><div class="twelve columns">      
-        <h4>We did it!</h4>
-        Our first action targeted Jason Chaffetz and was featured in the <ahref="http://archive.sltrib.com/article.php?id=5166377&itype=CMSID" target="_blank">Salt Lake Tribune</a>, <a href="https://www.washingtonpost.com/politics/jason-chaffetz-announces-he-wont-run-for-office-in-2018/2017/04/19/aad10c75-1200-483c-8d7f-16f2a996866d_story.html?utm_term=.db0ff1c4daf1" target="_blank">Washington Post</a> and the <a href="http://www.huffingtonpost.com/entry/jason-chaffetz-billboard-utah_us_58ef5a1de4b0b9e984899959" target="_blank">Huffington Post</a>.<br /><br />
-        <img class="image-fill" src="assets/images/ChaffetzBoard.png" alt="chaffetz russia billboard" />
-      </div></div></div>
-    </div>
+        var hamburger = document.getElementById('hamburger');
 
+        function toggleNav() {
+          var element = document.getElementById('navList');
+          element.classList.toggle('show');
+        }
+
+        hamburger.onclick = function(e) {
+          e.preventDefault();
+          toggleNav();
+        }
+
+      }(this, this.document));
+    </script>
   {{/inline}}
 
 {{/base }}
