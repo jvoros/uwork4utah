@@ -1,101 +1,45 @@
-@import "reboot"
+@import "_reboot"
+@import "_sanitize"
 @import "_colors"
 @import "_typography"
 @import "_buttons"
 @import "_nav"
 @import "_hero"
 @import "_social"
+@import "_footer"
+@import "_homepage"
 
-
-// Sanitize reboot
-*
-  background-repeat: no-repeat
-
-body
-	margin: 0
-
-img
-  max-width: 100%
-
-nav ol, nav ul
-  list-style: none
-  margin-bottom: 0
-  padding: 0
 
 // Utilities
 .container
   max-width: 1100px
   margin: 0 auto
 
+.responsive-flex
+  display: block
+
 .show
   display: block
 
-// Homepage
-
-h1.home-header
-  text-align: center
-  text-transform: uppercase
-  color: $red
-  margin-bottom: 2rem
-  font-size: 1.5rem
-
-section.home-section
-  margin-bottom: 2rem
-  padding: 0
-  text-align: center
-
-  h1, h2, h3, h4
-    font-family: $font-stack-sans
-    margin-bottom: 1rem
-
-  h2
-    //text-transform: uppercase
-    background-color: white
-    color: $navy
-    padding: 0.5rem
-
-  h3
-    background-color: $navy
-    color: white
-    font-weight: 400
-    padding: 0.5rem
-
-  p
-    text-align: left
-    margin-bottom: 2rem
-
-.ca-flex
-  display: block
-  padding-bottom: 2rem
-
-  p
-    padding: 0 2rem
-
-.ca-image
-  width: 100%
-  margin-bottom: 0rem
-  align-self: center
-
-.ca-headers
+// Mailchimp
+#mc_embed_signup
   padding: 2rem
+  text-align: center
+  color: $navy
 
+  .button
+    font-size: 0.75rem
+    background-color: $red
+
+footer #mc_embed_signup
+  color: white
+
+  .button
+    background-color: $red
+
+// Responsive
 @media (min-width: 400px)
-  .ca-flex
+  .responsive-flex
     display: flex
     flex-wrap: wrap
-  
-  .ca-image
-    width: 50%
-    align-self: flex-start
-    margin-top: 2rem
-
-  .ca-headers
-    width: 50%
-
-  .ca-content
-    width: 80%
-    margin: 1rem auto
-    font-family: $font-stack-serif
-    font-size: 1.25rem
-
-  
+    justify-content: center

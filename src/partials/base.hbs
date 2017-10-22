@@ -30,6 +30,7 @@
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
   <!-- CSS -->
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
   
   {{#>head-block}}
@@ -40,22 +41,18 @@
 <body>
   
   {{#>nav-block}}
-    {{!-- >_nav_new --}}
+    {{!-- default to _nav --}}
+    {{>_nav}}
   {{/nav-block}}
   
   {{#>content-block}}
-    {{!-- Contnet goes here. --}}
+    {{!-- Content goes here. --}}
   {{/content-block}}
     
-  <footer>
-    {{#>footer-block}}
-      {{!--
-        The `_footer` partial is the default content,
-        but can be overridden.
-      --}}
-      {{!-- >_footer --}}
-    {{/footer-block}}
-  </footer>
+  {{#>footer-block}}
+    {{!-- default to _footer --}}
+    {{>_footer }}
+  {{/footer-block}}
 
   {{#>scripts-block}}
     {{!-- Custom scripts per page can be added. --}}

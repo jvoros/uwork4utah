@@ -26,39 +26,70 @@
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
   <!-- CSS -->
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
   
 
 </head>
 <body>
   
+    <section id="nav-section" class="navy">
+      <nav class="container">
+        <div id="navbrand"><a href="index.html">U WORK 4 UTAH <i>A Super PAC</i></a></div>
+        <i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <ul id="navList" class="hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+    
+    <script>
+      (function (window, document) {
+    
+        var hamburger = document.getElementById('hamburger');
+    
+        function toggleNav() {
+          var element = document.getElementById('navList');
+          element.classList.toggle('show');
+        }
+    
+        hamburger.onclick = function(e) {
+          e.preventDefault();
+          toggleNav();
+        }
+    
+      }(this, this.document));
+    </script>  
   
-  <section id="nav-section" class="navy">
-    <nav class="container">
-      <div id="navbrand"><a href="index.html">U WORK 4 UTAH <i>A Super PAC</i></a></div>
-      <i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      <ul id="navList" class="hidden">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </section>
-
   <section id="hero" class="home-section container">
     <img src="assets/images/header.svg" alt="U Work 4 Utah" />
     <div id="mission"><span>U Work 4 Utah</span> uses <b>creative methods</b> to influence partisan elected officials representing Utahns to act in accordance with the <b>moderate views of their constituents.</b></div>
     <a class="button" href="https://www.crowdpac.com/campaigns/226261/hold-mia-love-accountable-on-health-care">Donate to the cause</a>
-    <ul class="sociallinks">
+    
+  </section>
+  
+  <section class="home-section lightblue">
+    <div id="mc_embed_signup">
+      <form action="//uwork4utah.us15.list-manage.com/subscribe/post?u=78f999b5d849cd6ea70bc9118&amp;id=f7df712a2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <label for="mce-EMAIL">Subscribe to our mailing list</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78f999b5d849cd6ea70bc9118_f7df712a2f" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+      </form>
+    </div>  <ul class="sociallinks">
       <li><a href="https://www.facebook.com/uwork4utah/"><i class="fa fa-facebook-square"></i></a></li>
       <li><a href="https://twitter.com/uwork4utah"><i class="fa fa-twitter"></i></a></li>
       <li><a href="https://www.instagram.com/uwork4utah/"><i class="fa fa-instagram"></i></a></li>
       <li><a href="mailto:info@uwork4utah.com"><i class="fa fa-envelope-o"></i></a></li>
     </ul>
   </section>
-
   <h1 class="home-header">Current Activity</h1>
   <section class="home-section red">
-    <div class="container ca-flex">
+    <div class="container responsive-flex">
         <img class="ca-image" src="assets/images/MiaLoveBillboard-Mockup.png" />
         <div class="ca-headers"><h2>Hold Mia Love Accountable on Healthcare</h2>
           <h3>Help us launch a billboard in a prominent location in her district.</h3>
@@ -69,30 +100,54 @@
   </section>
 
   <h1 class="home-header">Past Activity</h1>
+  <section class="home-section container responsive-flex pa">
+    <div>
+      <img src="assets/images/sltrib-logo.png" alt="Salt Lake Tribune Logo" />
+      <h1>Salt Lake Tribune Op-ed</h1>
+      <p>Read our op-ed in the Trib.</p>
+    </div>
+    <div>
+      <iframe id="chaff-vid" src="https://www.youtube.com/embed/ZuDN2tTqCNU" frameborder="0" allowfullscreen></iframe>  
+      <h1>Help Elect a Moderate to Replace Chaffetz</h1>
+      <p>We pushed to get a moderate to replace Chaffetz</p>
+    </div>
+    <div>
+      <img src="assets/images/ChaffetzBoard.png" alt="chaffetz russia billboard" />
+      <h1>Defeat Extremist Jason Chaffetz</h1>
+      <p>Our first action, launched a billboard that helped convince Chaffetz it was time to go!</p>
+    </div>
+  </section>
   
-
+    
+    <footer class="navy">
+      <div class="container">
+        <div id="mc_embed_signup">
+          <form action="//uwork4utah.us15.list-manage.com/subscribe/post?u=78f999b5d849cd6ea70bc9118&amp;id=f7df712a2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <label for="mce-EMAIL">Subscribe to our mailing list</label>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78f999b5d849cd6ea70bc9118_f7df712a2f" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+          </form>
+        </div>    
+        <br />
+        <ul class="sociallinks">
+          <li><a href="https://www.facebook.com/uwork4utah/"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/uwork4utah"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/uwork4utah/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="mailto:info@uwork4utah.com"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+    
+        <div class="footer-address">
+          2223 South Highland Drive #173<br>
+          Salt Lake City, Utah 84106
+        </div>
+    
+    </footer>
 
     
-  <footer>
-  </footer>
-
-    <script>
-      (function (window, document) {
-
-        var hamburger = document.getElementById('hamburger');
-
-        function toggleNav() {
-          var element = document.getElementById('navList');
-          element.classList.toggle('show');
-        }
-
-        hamburger.onclick = function(e) {
-          e.preventDefault();
-          toggleNav();
-        }
-
-      }(this, this.document));
-    </script>
 
 </body>
 </html>
