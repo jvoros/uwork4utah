@@ -289,6 +289,8 @@ template {
 .red {
   background-color: #cc3333;
   color: white; }
+  .red a {
+    color: #1d2935; }
 
 .lightblue {
   background-color: #e5efff; }
@@ -298,19 +300,13 @@ html {
   font-size: 100%; }
 
 h1 {
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
 
 h2 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h3 {
   font-size: 1rem; }
-
-h1.home-header {
-  text-align: center;
-  text-transform: uppercase;
-  color: #cc3333;
-  margin-bottom: 2rem; }
 
 @media (min-width: 400px) {
   h1 {
@@ -341,6 +337,9 @@ a.button {
 @media (min-width: 400px) {
   a.button {
     display: inline-block; } }
+
+#nav-section {
+  padding: 0; }
 
 nav {
   color: white;
@@ -458,35 +457,61 @@ nav ol, nav ul {
 .show {
   display: block; }
 
-#nav-section {
-  padding: 0; }
+h1.home-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #cc3333;
+  margin-bottom: 2rem;
+  font-size: 1.5rem; }
 
 section.home-section {
+  margin-bottom: 2rem;
   padding: 0;
   text-align: center; }
   section.home-section h1, section.home-section h2, section.home-section h3, section.home-section h4 {
     font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 1rem; }
   section.home-section h2 {
-    border-bottom: 2px solid white;
-    padding-bottom: 1rem; }
+    background-color: white;
+    color: #1d2935;
+    padding: 0.5rem; }
   section.home-section h3 {
-    color: #1d2935; }
+    background-color: #1d2935;
+    color: white;
+    font-weight: 400;
+    padding: 0.5rem; }
   section.home-section p {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 2rem; }
 
-img.home-image {
+.ca-flex {
+  display: block;
+  padding-bottom: 2rem; }
+  .ca-flex p {
+    padding: 0 2rem; }
+
+.ca-image {
   width: 100%;
-  margin-bottom: 0rem; }
+  margin-bottom: 0rem;
+  align-self: center; }
 
-.section-content {
+.ca-headers {
   padding: 2rem; }
 
-.current-activity-flex {
-  display: flex;
-  flex-wrap: wrap; }
-
-.current-activity-card {
-  flex: 1; }
+@media (min-width: 400px) {
+  .ca-flex {
+    display: flex;
+    flex-wrap: wrap; }
+  .ca-image {
+    width: 50%;
+    align-self: flex-start;
+    margin-top: 2rem; }
+  .ca-headers {
+    width: 50%; }
+  .ca-content {
+    width: 80%;
+    margin: 1rem auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.25rem; } }
 
 /*# sourceMappingURL=sass.css.map */
