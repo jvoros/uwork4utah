@@ -588,6 +588,32 @@ h1.home-header {
     .commentary-teaser a {
       display: inline-block; } }
 
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Georgia, Times, "Times New Roman", serif; }
+  article h1 {
+    font-family: "Oswald", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #cc3333;
+    margin-bottom: 2rem; }
+  article .meta {
+    margin-bottom: 2rem; }
+  article .date {
+    background-color: #e5efff;
+    color: #1d2935;
+    padding: 0.5rem;
+    margin-bottom: 4rem;
+    font-family: "Oswald", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+
+@media (min-width: 1100px) {
+  article h1 {
+    font-size: 3rem; } }
+
+b {
+  font-weight: bold; }
+
 .container {
   max-width: 1100px;
   margin: 0 auto; }
@@ -598,7 +624,7 @@ h1.home-header {
 .show {
   display: block; }
 
-@media (min-width: 400px) {
+@media (min-width: 1100px) {
   .responsive-flex {
     display: flex;
     flex-wrap: wrap;

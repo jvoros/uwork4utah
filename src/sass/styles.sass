@@ -17,8 +17,12 @@
 
 // Pages
 @import "_homepage"
+@import "_article"
 
 // Utilities
+
+b
+  font-weight: bold
 
 .container
   max-width: $max-width
@@ -34,7 +38,7 @@
 
 
 // Responsive
-@media (min-width: 400px)
+@media (min-width: $max-width)
   .responsive-flex
     display: flex
     flex-wrap: wrap
