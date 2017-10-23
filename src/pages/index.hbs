@@ -4,6 +4,11 @@
   
   {{> _hero }}
 
+  <section class="home-section lightblue">
+    {{> _mailchimp }}
+    {{> _sociallinks }}
+  </section>
+
   <h1 class="home-header">Current Activity</h1>
   <section class="home-section red">
     <div class="container responsive-flex">
@@ -16,22 +21,41 @@
     </div>
   </section>
 
+  <h1 class="home-header">Commentary</h1>
+  <section class="home-section lightblue">
+    <div class="commentary container responsive-flex">
+      <div class="commentary-teaser">
+        <h1>Why is Mia Love raising the cost of your healthcare?</h1>
+        <p>Are you ready to find more room in your family budget to pay for healthcare costs? Mia Love thinks you are!
+</p>
+        <a href="#">Read more</a>
+      </div>
+      <div class="commentary-teaser">
+        <h1>The Utah delegation’s race against truth</h1>
+        <p>For years now our entire delegation has told us that they had a plan to solve the healthcare problems Utahns face: out of control cost increases, limited access to care, and, since 2009, the negative side effects of the ACA, or “Obamacare.”
+We now see that our Utah delegation and their friends in Washington were repeating a big lie...</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+  </section>
+
   <h1 class="home-header">Past Activity</h1>
   <section class="home-section container responsive-flex pa">
-    <div>
+    <div class="pa-detail">
       <img src="assets/images/sltrib-logo.png" alt="Salt Lake Tribune Logo" />
       <h1>Salt Lake Tribune Op-ed</h1>
-      <p>Read our op-ed in the Trib.</p>
+      <p>Read <a href="http://www.sltrib.com/opinion/commentary/2017/09/29/commentary-the-utah-delegations-race-against-truth/" target="_blank">our latest Op-Ed</a> on the Utah Delegation's failure on healthcare in the Salt Lake Tribune.
+      </p>
     </div>
-    <div>
-      <iframe id="chaff-vid" src="https://www.youtube.com/embed/ZuDN2tTqCNU" frameborder="0" allowfullscreen></iframe>  
+    <div class="pa-detail">
+      <div class="videocontainer"><iframe id="chaff-vid" src="https://www.youtube.com/embed/ZuDN2tTqCNU" frameborder="0" allowfullscreen></iframe></div>
       <h1>Help Elect a Moderate to Replace Chaffetz</h1>
-      <p>We pushed to get a moderate to replace Chaffetz</p>
+      <p>We pushed to get a moderate elected to replace Jason Chaffetz.</p>
     </div>
-    <div>
+    <div class="pa-detail">
       <img src="assets/images/ChaffetzBoard.png" alt="chaffetz russia billboard" />
       <h1>Defeat Extremist Jason Chaffetz</h1>
-      <p>Our first action, launched a billboard that helped convince Chaffetz it was time to go!</p>
+      <p>Our first action, launched a billboard that helped convince Chaffetz it was time to go! We were featured in the <a href="http://archive.sltrib.com/article.php?id=5166377&itype=CMSID" target="_blank">Salt Lake Tribune</a>, <a href="https://www.washingtonpost.com/politics/jason-chaffetz-announces-he-wont-run-for-office-in-2018/2017/04/19/aad10c75-1200-483c-8d7f-16f2a996866d_story.html?utm_term=.db0ff1c4daf1" target="_blank">Washington Post</a> and the <a href="http://www.huffingtonpost.com/entry/jason-chaffetz-billboard-utah_us_58ef5a1de4b0b9e984899959" target="_blank">Huffington Post</a>.</p>
     </div>
   </section>
   

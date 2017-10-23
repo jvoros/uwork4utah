@@ -1,18 +1,27 @@
+// Base
 @import "_reboot"
 @import "_sanitize"
+
+// Variables
+@import "_mediaqueries"
 @import "_colors"
 @import "_typography"
+
+// Components
 @import "_buttons"
 @import "_nav"
 @import "_hero"
 @import "_social"
+@import "_mailchimp"
 @import "_footer"
+
+// Pages
 @import "_homepage"
 
-
 // Utilities
+
 .container
-  max-width: 1100px
+  max-width: $max-width
   margin: 0 auto
 
 .responsive-flex
@@ -21,25 +30,12 @@
 .show
   display: block
 
-// Mailchimp
-#mc_embed_signup
-  padding: 2rem
-  text-align: center
-  color: $navy
+// Dev Styles
 
-  .button
-    font-size: 0.75rem
-    background-color: $red
-
-footer #mc_embed_signup
-  color: white
-
-  .button
-    background-color: $red
 
 // Responsive
 @media (min-width: 400px)
   .responsive-flex
     display: flex
     flex-wrap: wrap
-    justify-content: center
+    justify-content: space-between

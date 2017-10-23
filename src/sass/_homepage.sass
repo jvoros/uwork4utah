@@ -3,13 +3,14 @@
 // Homepage
 
 h1.home-header
+  max-width: $max-width
+  margin: 0 auto 2rem auto
   text-align: center
   text-transform: uppercase
   color: $red
-  margin-bottom: 2rem
-  font-size: 1.5rem
+  font-size: 1.8rem
 
-section.home-section
+.home-section
   margin-bottom: 2rem
   padding: 0 0 2rem 0
   text-align: center
@@ -23,11 +24,13 @@ section.home-section
     background-color: white
     color: $navy
     padding: 0.5rem
+    font-size: 2rem
 
   h3
     background-color: $navy
     color: white
-    font-weight: 400
+    font-weight: 300
+    font-size: 1.3rem
     padding: 0.5rem
 
   p
@@ -43,32 +46,64 @@ section.home-section
 .ca-headers
   padding: 2rem
 
-.pa div
+.pa-detail
   padding: 0
   text-align: left
   font-size: 1.25rem
-  border-bottom: 2px solid $lightblue
   margin: 1rem
 
   h1
     font-size: 1.25rem
+    color: $red
 
   p
     padding: 0
+    font-size: 1rem
 
   img
     margin-bottom: 1rem
 
+.videocontainer
+  position: relative
+  padding-bottom: 60%
+
+  height: 0
+  overflow: hidden
+  margin-bottom: 1rem
+
   iframe
-    margin-botom: 1rem
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
-#chaff-vid
-  width: 320px
-  height: 250px
-  margin: 0 0 1rem 0
-  padding: 0
+.commentary
+  padding: 2rem;
 
-@media (min-width: 400px)
+  .commentary-teaser
+    margin-bottom: 2rem
+
+  h1
+    text-align: left
+
+  p
+    padding: 0
+    font-family: $font-stack-serif
+
+  a
+    display: block
+    padding: 1rem
+    background-color: $red
+    color: white
+    text-transform: uppercase
+
+  
+
+@media (min-width: $screen-sm)
+  h1.home-header
+    font-size: 2.5rem
+  
   .ca-image
     width: 50%
     align-self: flex-start
@@ -83,9 +118,16 @@ section.home-section
     font-family: $font-stack-serif
     font-size: 1.25rem
 
-  .pa div
-    width: 32%
+  .pa-detail
+    width: 30%
     margin: 0 1rem 1rem 0
     
     &:last-of-type
       margin-right: 0
+
+  .commentary-teaser
+    width: 50%
+    text-align: left
+
+    a
+      display: inline-block
