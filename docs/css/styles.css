@@ -520,6 +520,9 @@ h1.home-header {
 .ca-headers {
   padding: 2rem; }
 
+.ca-content {
+  font-family: Georgia, Times, "Times New Roman", serif; }
+
 .pa-detail {
   padding: 0;
   text-align: left;
@@ -575,7 +578,6 @@ h1.home-header {
   .ca-content {
     width: 80%;
     margin: 1rem auto;
-    font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.25rem; }
   .pa-detail {
     width: 30%;
