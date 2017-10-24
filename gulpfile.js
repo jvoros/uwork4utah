@@ -31,6 +31,7 @@ const config = {
   partials: "./src/partials",
   sass: "./src/sass/*.sass",
   assets: "./src/assets/**/*",
+  favicons: "./src/favicons/*",
   cname: "./src/CNAME",
   dest: "./docs",
   html: "./docs/*.html",
@@ -70,6 +71,11 @@ gulp.task('assets', () => {
   .pipe(gulp.dest(config.dest));
 });
 
+gulp.task('favicons', () => {
+  return gulp.src(config.favicons)
+  .pipe(gulp.dest(config.dest));
+});
+
 gulp.task('cname', () => {
   return gulp.src(config.cname)
   .pipe(gulp.dest(config.dest));
@@ -87,6 +93,7 @@ gulp.task('watchers', () => {
 const buildList = [
   'cleanall',
   'cname',
+  'favicons',
   'html',
   'sass',
   'assets'
